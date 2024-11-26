@@ -53,6 +53,12 @@ namespace _1exception
         {
             return (double)sum / count;
         }
+        public static void CreateFiles(List<string> nofiles, List<string> badData, List<string> overflowData)
+        {
+            File.WriteAllLines(@"C:\c#labs\1exception\1exception\TXT\no_file.txt", nofiles);
+            File.WriteAllLines(@"C:\c#labs\1exception\1exception\TXT\bad_data.txt", badData);
+            File.WriteAllLines(@"C:\c#labs\1exception\1exception\TXT\overflow.txt", overflowData);
+        }
     }
 }
 internal class Program
