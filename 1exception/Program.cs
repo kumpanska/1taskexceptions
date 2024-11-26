@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using _1exception;
 
 namespace _1exception
 {
@@ -88,7 +89,13 @@ internal class Program
                 @"C:\c#labs\1exception\1exception\TXT\28.txt",
                 @"C:\c#labs\1exception\1exception\TXT\29.txt",
             };
-
+        List<string> nofiles = new List<string>();
+        List<string> badData = new List<string>();
+        List<string> overflowData = new List<string>();
+        DoFiles.ReadFiles(files, nofiles, badData, overflowData);
+        DoFiles.CreateFiles(nofiles, badData, overflowData);
+        double average = DoFiles.Average();
+        Console.WriteLine($"Average of products: {average}");
     }
 }
 
