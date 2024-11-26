@@ -23,14 +23,25 @@ namespace _1exception
                 {
                     badData.Add(file);
                 }
-                catch (FileNotFoundException) 
+                catch (FileNotFoundException)
                 {
                     nofiles.Add(file);
                 }
-                catch(FormatException)
+                catch (FormatException)
                 {
                     badData.Add(file);
                 }
+            }
+        }
+        public static void Operations(string[] lines, string file, List<string> overflowData)
+        {
+            try
+            {
+
+            }
+            catch (OverflowException)
+            {
+                overflowData.Add(file);
             }
         }
     }
