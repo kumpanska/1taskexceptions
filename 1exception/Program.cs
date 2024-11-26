@@ -65,6 +65,30 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        List<string> files = new List<string>
+            {
+                @"C:\c#labs\1exception\1exception\TXT\10.txt",
+                @"C:\c#labs\1exception\1exception\TXT\11.txt",
+                @"C:\c#labs\1exception\1exception\TXT\12.txt",
+               @"C:\c#labs\1exception\1exception\TXT\13.txt",
+                @"C:\c#labs\1exception\1exception\TXT\14.txt",
+                @"C:\c#labs\1exception\1exception\TXT\15.txt",
+                @"C:\c#labs\1exception\1exception\TXT\16.txt",
+                @"C:\c#labs\1exception\1exception\TXT\17.txt",
+                @"C:\c#labs\1exception\1exception\TXT\18.txt",
+                @"C:\c#labs\1exception\1exception\TXT\19.txt",
+                @"C:\c#labs\1exception\1exception\TXT\20.txt",
+                @"C:\c#labs\1exception\1exception\TXT\21.txt",
+                @"C:\c#labs\1exception\1exception\TXT\22.txt",
+                @"C:\c#labs\1exception\1exception\TXT\23.txt",
+                @"C:\c#labs\1exception\1exception\TXT\24.txt",
+                @"C:\c#labs\1exception\1exception\TXT\25.txt",
+                @"C:\c#labs\1exception\1exception\TXT\26.txt",
+                @"C:\c#labs\1exception\1exception\TXT\27.txt",
+                @"C:\c#labs\1exception\1exception\TXT\28.txt",
+                @"C:\c#labs\1exception\1exception\TXT\29.txt",
+            };
+
     }
 }
 
