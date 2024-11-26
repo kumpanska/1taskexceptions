@@ -49,6 +49,10 @@ namespace _1exception
                 overflowData.Add(file);
             }
         }
+        public static double Average()
+        {
+            return (double)sum / count;
+        }
     }
 }
 internal class Program
