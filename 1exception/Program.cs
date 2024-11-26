@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace _1exception
@@ -12,12 +13,32 @@ namespace _1exception
         private static int count = 0;
         public static void ReadFiles(List<string> files, List<string> nofiles, List<string> badData, List<string> overflowData)
         {
-        }
-    }
-        internal class Program
-    {
-        static void Main(string[] args)
-        {
+            foreach (string file in files)
+            {
+                try
+                {
+                    string[] lines = File.ReadAllLines(file);
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    badData.Add(file);
+                }
+                catch (FileNotFoundException) 
+                {
+                    nofiles.Add(file);
+                }
+                catch(FormatException)
+                {
+                    badData.Add(file);
+                }
+            }
         }
     }
 }
+internal class Program
+{
+    static void Main(string[] args)
+    {
+    }
+}
+
