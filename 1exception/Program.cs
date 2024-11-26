@@ -18,6 +18,7 @@ namespace _1exception
                 try
                 {
                     string[] lines = File.ReadAllLines(file);
+                    Operations(lines, file, overflowData);
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -37,7 +38,11 @@ namespace _1exception
         {
             try
             {
-
+                int num1 = Convert.ToInt32(lines[0]);
+                int num2 = Convert.ToInt32(lines[1]);
+                int mult = checked(num1 * num2);
+                sum += mult;
+                count++;
             }
             catch (OverflowException)
             {
